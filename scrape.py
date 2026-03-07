@@ -87,17 +87,7 @@ def convert_units(amount, og_units, isSolid): #assume we convert everything to o
     else:
         return None #implement this later 
 
-            
-
-
-
-
-
-    
-
-
-    
-
+        
 calculate_unit_price(price,product_name)
 
 
