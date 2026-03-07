@@ -2,7 +2,6 @@ import { useState } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
-import SearchBar from "./SearchBar"
 
 function App() {
   const [query, setQuery] = useState("")
@@ -42,8 +41,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-    <SearchBar />
-  )
 }
 
 export default App
