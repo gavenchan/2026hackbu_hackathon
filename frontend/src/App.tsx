@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { RECIPES } from "./data/recipes";
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import CategoryRow from "./components/CategoryRow";
 import FilterPills from "./components/FilterPills";
 import RecipeGrid from "./components/RecipeGrid";
@@ -59,9 +58,6 @@ export default function App() {
       {/* Body: sidebar + main + optional detail panel */}
       <div className="flex flex-1">
 
-        {/* Left sidebar */}
-        <Sidebar activeLink={activeSideLink} onLinkClick={setActiveSideLink} />
-
         {/* Main content */}
         <main className="flex-1 min-w-0 px-8 py-7 overflow-y-auto h-[calc(100vh-3.5rem)]">
 
@@ -86,7 +82,7 @@ export default function App() {
           ) : (
             <>
               <RecipeGrid
-                title="⭐ National Favorites"
+                title="Student Favorites"
                 recipes={topRated}
                 onSelect={setSelected}
                 onSave={toggleSave}
